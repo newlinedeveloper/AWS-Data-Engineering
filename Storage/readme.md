@@ -13,7 +13,6 @@ S3 Security
  -Encryption - uisng encryption keys
 
 
-
 S3 bucket policies
 - Public access - Use bucket policy
 - User access to s3 -  IAM permissions
@@ -90,7 +89,6 @@ S3 Glacier Storage classes
  - There is no retrieval charges in S3 intelligent tiering
 
 
-
 S3 - Moving between storage classes
 
 -  transition objects between storage classes
@@ -103,8 +101,87 @@ S3 Lifecycle rules
    - Move objects to standard IA class 60 days after creation
     - Move to Glacier for archiving after 6 months
 - Expiration rules
-- - Access log files can be set to delete after 365 days
+ - Access log files can be set to delete after 365 days
 
 
+ S3 Analytics - Storage class analysis
+ - Help us decide when to transition objects to right storage class
+ - recommended for standard and standard IA
+ - daily report
+
+
+S3 Notification
+- SNS, SQS, Lambda trigger
+- S3:ObjectCreated, S3:ObjectRemoved, S3:ObjectRestore, S3:Replication
+- Object name filtering
+- Usecase - generate thumbnailes of images uploaded to S3
+- Need IAM permissions
+- We can integrate with Event bridge for Advanced filtering, multiple destinations, EventBridge capabilities
+
+S3 - Baseline performance
+- 3,500 PUT/COPY/POST/DELETE or 5,500 GET/HEAD requests per second per prefix in a bucket.
+- Multi-part upload
+    - recommended for > 100 MB
+    - must for > 5 GB
+    - parallelize uploads
+- S3 Transfer acceleration
+    - transfer file to aws edge location
+    - compatible with multi-part upload
+- S3 Byte Range fetches
+
+S3 Select & Glacier Select
+- Retrieve less data using SQL by performing server-side filtering
+
+
+S3 - Object Encryption
+
+- Server-side encryption (SSE)
+   - Server side encryption with Amazon S3 managed keys (SSE-S3)
+   - Server side encryption with KMS keys stored in AWS KMS (SSE-KMS)
+   - Server side encryption with customer provided keys (SSE-C)
+- Client-side encryption
+
+
+S3 - Encryption in transit - (SSL/TLS)
+
+S3- Access points
+- similar to bucket policy
+- simplify security managment for S3 buckets
+
+S3- Access points - VPC origin
+- set within VPC access
+- Need VPC Endpoint and VPC endpoint policy to access target bucket
+
+
+S3 Object Lambda
+- Use lambda function to change the object before it's retrieved by the caller application
+
+
+
+EC2 Instance storage section 
+
+**EBS - Elastic block storage**
+- Network drive
+- can only be mounted to one instance at a time
+- a specific availability zone
+- default EBS with EC2 instance
+- Delete on termination attribute
+
+**EFS-Elastic File system**
+- Network file system that can be mounted on many EC2
+- EFS works with Ec2 instance in multi-AZ
+- usecases - content managment, web serving, data sharing, wordpress
+- linux based system support
+- EFS storage class - life cycle management feature - move file after N days
+
+
+**AWS Backup**
+- Centrally manage and automate backups across AWS services
+- No need for manual and script process
+- support cross region and cross account support
+- In backup plan  - Need mention frequency and retention policy
+- AWS Backup Vault lock
+   - Backups can't be deleted
+   - Write once read many
 
 
