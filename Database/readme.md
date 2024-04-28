@@ -111,6 +111,32 @@ DynamoDB streams
 
 #### Amazon RDS
 
+- Hosted Relational database
+  - Amazon Aurora
+  - MySql
+  - PostgreSQl
+  - MariaDB
+  - Oracle
+  - SQL server
+- Not for bigdata
+- it fully offers ACID property
+
+Amazon Aurora
+- Mysql and postgresql - compatible
+- Up to 5x faster than MySql , 3X faster than PostgreSQL
+- 1/10 cost of commercial database
+- Upto 128TB per database volume
+- up to 15 read replicas
+- Continuous backup to S3
+- replication across regions
+- automatic scaling
+- security
+  - VPC network isolation
+  - At-rest with KMS
+  - in-transit with SSL
+- LOCK command
+  - Shared lock - read only
+  - Exclusive lock - No read and write
 
 #### Document DB
 - DocumentDB is same for mongoDB
@@ -129,4 +155,6 @@ DynamoDB streams
 #### Amazon Timestream
 - Time series database
 - 1000s times faster & 1/10th the cost of relational databases
- 
+
+
+#### Amazon Redshift
