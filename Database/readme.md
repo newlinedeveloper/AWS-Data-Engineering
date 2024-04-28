@@ -143,7 +143,7 @@ Amazon Aurora
 - automatically grows in increments in 10GB
 
 #### Amazon Memory DB for Redis
-- In memory database sergice
+- In memory database service
 - ultra fast performance with over 160 millions requests/second
 
 #### Amazon Keyspaces (for Apache Cassandra)
@@ -158,3 +158,73 @@ Amazon Aurora
 
 
 #### Amazon Redshift
+- Fully managed, Petabyte-scale data warehouse
+- 10 * better performance than other DW's
+- Designed for OLAP , not OLTP
+- SQL, ODBC, JDBC interfaces
+- Built in replication &  backups & scale up and down on demand
+- Monitoring via Cloudwatch / CloudTrail
+
+
+Redshift spectrum
+- Query exabytes of unstructured data in S3 without loading
+- Limitless concurrency
+- Horizontal scaling
+- Seperate storage & Compute resources
+- wide variety of data formats
+- Support of Gzip and snappy compression
+
+Redshift performance
+- Massively parallel processing (MPP)
+- Columnar Data storage
+- Column compression
+
+Redshift durability
+- Replication within cluster
+- Backup to S3
+
+Scaling Redshift
+- Vertical and Horizontal scaling - Read PPT for more details
+
+
+Redshift Distribution styles
+- Auto - Redshift figures it out based on size of data
+- Even - Rows distributed across slices in round-robin
+- Key - Rows distributed based on one column
+- All - Entire table is copied to every node
+
+Importing / Exporting Data
+- COPY command - use COPY to large amounts of data from outside of redshift
+- UNLOAD command
+- Enhanced VPC routing
+- Auto-copy from amazon s3
+- Amazon aurora zero-ETL integration
+- Redshit streaming integration
+
+Redshift copy grant for cross-region snapshot copies
+
+DBlink
+- Connect Redshift to PostgreSQL
+- Good way to copy and sync data between postgresql and redshift
+
+Integration with other services
+- S3
+- DynamoDB
+- EMR/EC2
+- Data pipeline
+- Database migration
+
+Redshift workload management
+
+concurrency scaling
+
+Automatic workload management
+
+Manual workload management
+
+short query acceleartion(SQA)
+
+Resizing Redshift clusters
+
+VACUUM command
+-
