@@ -227,4 +227,64 @@ short query acceleartion(SQA)
 Resizing Redshift clusters
 
 VACUUM command
--
+- Recovers space from deleted rows and restores sort order
+- VACUUM FULL
+- VACUUM DELETE ONLY
+- VACUUM SORT ONLY
+- VACUUM REINDEX
+
+Redshift anti-patterns
+- small datasets
+- OLTP
+- unstructured data
+- BLOB data
+
+Redshift security concerns
+ - Using a hardware security module
+ - Defining access previleges for user or group
+
+
+Redshift serverless
+
+Resource scaling in redshift serverless
+- capactiy measured Redshift processing units
+- RPU-hours (per second)
+- we can integrate with
+- - Redshift spectrum
+  - Parameter groups
+  - workload management
+  - AWS partner integration
+  - maintenance windows / version tracks
+ - No public endpoints
+   - Must access within a VPC
+  
+Redshift serverless - Monitoring
+-  Monitoring views
+-  cloudwath logs
+-  cloudwatch metrics
+
+Redshift materialized views
+- Contains precomputed results based on SQL queries over one or more base tables
+
+Redshift Data sharing
+- securely share live data across redshift clusters for read purposes
+- Producer/consumer architecture
+- both must be encrypted
+
+Redshift lambda UDF
+- use custom functions in AWS lambda inside SQL queries
+- Register with CREATE EXTERNAL FUNCTION
+
+Redshift federated queries
+- Query and analyze across databases, warehouses and lakes
+- Ties Redshift to amazon RDS or Aurora for postgreSQL and MySQL
+- Must establish connectivity between your redshift cluster and RDS aurora
+- Connect using CREATE EXTERNAL SCHEMA
+- Read only access to external data sources
+- costs will be incured on external DB's
+- you can query RDS/Aurora from redshift
+
+Redshift system tables and views
+- contains info about how Redshift is functioning
+- Types of system tables / views
+- Many system monitoring views and tables are only for provisioned clusters not serverless
