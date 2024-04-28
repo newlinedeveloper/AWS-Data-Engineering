@@ -67,3 +67,43 @@ DynamoDB - Reading Data
 DynamoDB - Deleting Data
 - DeleteItem
 - DeleteTable
+
+DynamoDB - Batch operations
+- BatchWriteItem
+- BatchGetItem
+
+DynamoDB - PartiQL
+
+```
+Select OrderID, Total
+From Orders
+Where OrderID In [1,2,3]
+Order by OrderID Desc
+
+```
+
+DynamoDB - Local Secondary Index
+- Alternative sort key
+- Upto 5 local secondary index
+- must be defined at table creation time
+- Uses the WCU and RCUs of the main table
+- No special throttling considerations
+
+DynamoDB - Global Secondary Index
+- Alternative primary key
+- can be added / modified after table creation
+- Choose your GSI partition key carefully
+- Assign your WCU capacity carefully
+
+DynamoDB Accelerator (DAX)
+- in-memory cache for DynamoDB
+- solves the "Hot key" problem
+- 5 minutes TTL for cache
+
+DynamoDB streams
+- Ordered stream of item-level modifications(Create/update/delete) in a table
+- retention for upto 24 hours
+- stream records can be:
+  - sent to kinesis Data streams
+  - Read by AWS Lambda
+  - Read by Kinesis Client library applications
