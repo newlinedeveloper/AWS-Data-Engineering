@@ -47,3 +47,23 @@ DynamoDB - Throttling
     - Exponential backoff
     - Distribute partition keys
     - we can use DynamoDB accelerator
+
+
+DynamoDB - Writing Data
+- PutItem
+- UpdateItem
+- Conditional writes
+
+
+DynamoDB - Reading Data
+- GetItem
+- Query
+   - KeyConditionExpression
+   - FilterExpression
+- Scan
+   - return upto 1 MB of data
+   - ProjectionExpression &  FilterExpression
+ 
+DynamoDB - Deleting Data
+- DeleteItem
+- DeleteTable
