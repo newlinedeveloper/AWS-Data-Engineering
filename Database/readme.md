@@ -107,3 +107,26 @@ DynamoDB streams
   - sent to kinesis Data streams
   - Read by AWS Lambda
   - Read by Kinesis Client library applications
+ 
+
+#### Amazon RDS
+
+
+#### Document DB
+- DocumentDB is same for mongoDB
+- automatically grows in increments in 10GB
+
+#### Amazon Memory DB for Redis
+- In memory database sergice
+- ultra fast performance with over 160 millions requests/second
+
+#### Amazon Keyspaces (for Apache Cassandra)
+- Apache cassandra is an opensource Nosql distributed database
+
+#### Amazon Neptune
+- Graph database for social network dataset
+
+#### Amazon Timestream
+- Time series database
+- 1000s times faster & 1/10th the cost of relational databases
+ 
