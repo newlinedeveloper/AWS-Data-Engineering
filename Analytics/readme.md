@@ -6,10 +6,7 @@
 #### AWS Lake formation
 
 
-#### AWS Lake Athena
-
-
-#### AWS Lake formation
+#### AWS Athena
 
 
 #### EMR
@@ -27,6 +24,6 @@
 #### Amazon Opensearch service
 
 
-#### Amazone Quicksights
+#### Amazon Quicksights
 
 
