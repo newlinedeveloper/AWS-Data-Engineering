@@ -1,0 +1,39 @@
+### 1. **What is AWS Glue DataBrew, and how does it differ from AWS Glue?**
+   
+### 2. **How does AWS Glue DataBrew integrate with the AWS Glue Data Catalog?**
+
+### 3. **What are the key features of AWS Glue DataBrew for data preparation, and how does it help in simplifying ETL workflows?**
+
+### 4. **How do you handle data profiling and quality checks in AWS Glue DataBrew?**
+
+### 5. **Explain how AWS Glue DataBrew automates data cleaning and transformation processes. Can you provide examples of common transformations?**
+
+### 6. **What are the benefits of using AWS Glue DataBrew for no-code data wrangling compared to writing custom Python or Spark scripts in AWS Glue?**
+
+### 7. **Can you integrate AWS Glue DataBrew with other AWS services like Amazon S3, Redshift, or RDS? How does this integration work for end-to-end ETL pipelines?**
+
+### 8. **How do you handle large datasets in AWS Glue DataBrew, and what are the performance optimization strategies for working with such datasets?**
+
+### 9. **How would you implement version control for the data transformation recipes in AWS Glue DataBrew?**
+
+### 10. **What is the role of data transformations in AWS Glue DataBrew, and how can you create custom transformations?**
+
+### 11. **Explain the concept of "recipes" in AWS Glue DataBrew. How do you use them to build and apply data transformation workflows?**
+
+### 12. **What security measures should be followed while using AWS Glue DataBrew, especially when dealing with sensitive data?**
+
+### 13. **How does AWS Glue DataBrew handle schema drift or changes in the input data schema over time?**
+
+### 14. **Can you schedule and automate AWS Glue DataBrew jobs? If so, how would you set up scheduling for a specific data transformation task?**
+
+### 15. **How do you use AWS Glue DataBrew for visualizing data and gaining insights into the dataset before applying transformations?**
+
+### 16. **What are the best practices for managing data catalogs and datasets in AWS Glue DataBrew?**
+
+### 17. **How does AWS Glue DataBrew help in integrating machine learning features into data preparation workflows?**
+
+### 18. **How do you handle error handling, logging, and troubleshooting in AWS Glue DataBrew workflows?**
+
+### 19. **Explain the concept of "datasets" and "projects" in AWS Glue DataBrew. How do they fit into a data preparation pipeline?**
+
+### 20. **What are the limitations of AWS Glue DataBrew, and how would you address these limitations in a large-scale enterprise environment?**
