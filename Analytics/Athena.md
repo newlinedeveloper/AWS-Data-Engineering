@@ -18,3 +18,4 @@
 - How do you handle schema evolution in AWS Athena? What strategies do you use to manage changes in the data schema over time?
 - Explain the role of AWS Lake Formation in managing data lakes with AWS Athena. How does it enhance data security and governance?
 - Discuss a complex use case where you leveraged AWS Athena to solve a business problem. What challenges did you face, and how did you overcome them?
+
