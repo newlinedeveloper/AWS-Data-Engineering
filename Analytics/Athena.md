@@ -1,0 +1,20 @@
+- Explain the architecture of AWS Athena. How does it integrate with other AWS services?
+- How does AWS Athena handle schema-on-read? What are the advantages and disadvantages of this approach?
+- Describe the process of setting up AWS Athena to query data stored in Amazon S3. What are the key steps and configurations required?
+- What are the best practices for optimizing query performance in AWS Athena?
+- How does AWS Athena pricing work? What factors influence the cost of running queries?
+- Explain how partitioning works in AWS Athena. How can you create and manage partitions to improve query performance?
+- What are the common data formats supported by AWS Athena? How do you choose the right format for your use case?
+- Describe how you can use AWS Glue with AWS Athena. What are the benefits of using AWS Glue for data cataloging and ETL?
+- How can you secure data queried by AWS Athena? Discuss encryption, IAM policies, and other security measures.
+- Explain how you can use AWS Athena to query data across multiple AWS accounts. What are the challenges and solutions for cross-account querying?
+- What are user-defined functions (UDFs) in AWS Athena? How can you create and use them in your queries?
+- Describe a scenario where you had to troubleshoot a performance issue in AWS Athena. What steps did you take to identify and resolve the issue?
+- How can you automate the execution of AWS Athena queries? Discuss the use of AWS Lambda, Step Functions, and other automation tools.
+- Explain the concept of federated queries in AWS Athena. How can you use federated queries to access data in other data sources?
+- What are the limitations of AWS Athena? How do you work around these limitations in your projects?
+- How can you monitor and log AWS Athena queries? Discuss the use of CloudWatch, AWS CloudTrail, and other monitoring tools.
+- Describe how you can use AWS Athena with Amazon QuickSight for data visualization. What are the steps to integrate these services?
+- How do you handle schema evolution in AWS Athena? What strategies do you use to manage changes in the data schema over time?
+- Explain the role of AWS Lake Formation in managing data lakes with AWS Athena. How does it enhance data security and governance?
+- Discuss a complex use case where you leveraged AWS Athena to solve a business problem. What challenges did you face, and how did you overcome them?
